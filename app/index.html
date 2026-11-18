@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#1c2b24" />
+    <meta
+      name="description"
+      content="Fifteen is a 15 second tap game. Hit the mark before it jumps."
+    />
+    <title>Fifteen</title>
+  </head>
+  <body>
+    <div id="app" class="app" data-phase="ready">
+      <header class="top">
+        <div class="brand">
+          <p class="kicker">Devian Kapp</p>
+          <h1>Fifteen</h1>
+        </div>
+        <div class="meters">
+          <p class="meter">
+            <span class="meter-value" id="time">15.0</span>
+            <span class="meter-label">seconds</span>
+          </p>
+          <p class="meter">
+            <span class="meter-value" id="score">0</span>
+            <span class="meter-label">taps</span>
+          </p>
+        </div>
+        <div class="track" aria-hidden="true">
+          <span class="bar" id="bar"></span>
+        </div>
+      </header>
+      <div class="field">
+        <div class="arena" id="arena">
+          <button type="button" class="target" id="target" hidden>Tap</button>
+          <section class="panel" id="panel">
+            <p class="kicker" id="panel-kicker">A fifteen second round</p>
+            <h2 id="panel-title">Hit the mark.</h2>
+            <p class="copy" id="panel-copy">
+              The mark jumps as soon as you tap it. Only a hit scores. You get
+              fifteen seconds.
+            </p>
+            <p class="result" id="result" hidden>
+              <span class="result-count" id="result-count">0</span>
+              <span class="result-caption" id="result-caption"></span>
+            </p>
+            <p class="best" id="best-line"></p>
+            <button type="button" class="action" id="action">Start round</button>
+          </section>
+        </div>
+      </div>
+      <p id="live" class="sr" aria-live="polite"></p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
