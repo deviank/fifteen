@@ -10,11 +10,11 @@
     <meta name="theme-color" content="#1c2b24" />
     <meta
       name="description"
-      content="Fifteen is a 15 second tap game. Hit the mark before it jumps."
+      content="Fifteen is a 15 second tap game. Score when the mark peeks out from a cloud."
     />
     <title>Fifteen</title>
-    <script type="module" crossorigin src="/fifteen/assets/index-CFZRVc-X.js"></script>
-    <link rel="stylesheet" crossorigin href="/fifteen/assets/index-CzTBb30r.css">
+    <script type="module" crossorigin src="/fifteen/assets/index-DDLu234u.js"></script>
+    <link rel="stylesheet" crossorigin href="/fifteen/assets/index-CVzDAGim.css">
   </head>
   <body>
     <div id="app" class="app" data-phase="ready">
@@ -40,12 +40,13 @@
       <div class="field">
         <div class="arena" id="arena">
           <button type="button" class="target" id="target" hidden>Tap</button>
+          <div class="clouds" id="clouds" hidden aria-hidden="true"></div>
           <section class="panel" id="panel">
             <p class="kicker" id="panel-kicker">A fifteen second round</p>
             <h2 id="panel-title">Hit the mark.</h2>
             <p class="copy" id="panel-copy">
-              The mark jumps as soon as you tap it. Only a hit scores. You get
-              fifteen seconds.
+              Clouds cover the mark, and you can only score when it peeks out
+              along an edge.
             </p>
             <p class="result" id="result" hidden>
               <span class="result-count" id="result-count">0</span>

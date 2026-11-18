@@ -1,6 +1,6 @@
 # Fifteen
 
-A browser tap game by Devian Kapp. Each round lasts fifteen seconds. Tap the mark to score. When time runs out, you see your taps and can play again.
+A browser tap game by Devian Kapp. Each round lasts fifteen seconds. Tap the mark to score. Clouds cover the mark, and you can only score when it peeks out along an edge. When time runs out, you see your taps and can play again.
 
 It works in a phone browser and on a desktop. This version has no ads, no account, and no payments. Your best score stays in this browser only.
 

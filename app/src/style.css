@@ -288,6 +288,31 @@ button {
   animation: hop 180ms ease-out;
 }
 
+.target:disabled {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.clouds,
+.cloud {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.puff {
+  position: absolute;
+  border-radius: 50%;
+  clip-path: circle(50%);
+  pointer-events: auto;
+  touch-action: none;
+  background: radial-gradient(circle at 32% 34%, #ffffff 0%, #f7f1e6 46%, #e4d8c4 100%);
+  box-shadow:
+    inset -10px -12px 18px rgba(180, 164, 140, 0.35),
+    0 10px 16px rgba(28, 43, 36, 0.1);
+}
+
 .pop {
   position: absolute;
   z-index: 3;
